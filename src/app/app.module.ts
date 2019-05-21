@@ -8,6 +8,7 @@ import { SimpleComponent } from './components/simple/simple.component';
 import { AttributeSelectorComponent } from './components/attribute-selector/attribute-selector.component';
 import { ClassSelectorComponent } from './components/class-selector/class-selector.component';
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
+import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InterpolationComponent } from './components/interpolation/interpolation
     SimpleComponent,
     AttributeSelectorComponent,
     ClassSelectorComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,
