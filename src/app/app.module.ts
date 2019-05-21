@@ -7,6 +7,7 @@ import { AngularCliComponent } from './components/angular-cli/angular-cli.compon
 import { SimpleComponent } from './components/simple/simple.component';
 import { AttributeSelectorComponent } from './components/attribute-selector/attribute-selector.component';
 import { ClassSelectorComponent } from './components/class-selector/class-selector.component';
+import { InterpolationComponent } from './components/interpolation/interpolation.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ClassSelectorComponent } from './components/class-selector/class-select
     AngularCliComponent,
     SimpleComponent,
     AttributeSelectorComponent,
-    ClassSelectorComponent
+    ClassSelectorComponent,
+    InterpolationComponent
   ],
   imports: [
     BrowserModule,
