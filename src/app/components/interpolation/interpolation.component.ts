@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class InterpolationComponent implements OnInit {
   public title: string;
   public code: string;
+  public someNumber: number = 134;
 
   constructor() {
     this.title = "Interpolation";
@@ -15,6 +16,10 @@ export class InterpolationComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  getSomeString() {
+    return 'Some string...';
   }
 
 }
