@@ -1,0 +1,15 @@
+<div class="card mt-3">
+  <div class="card-header">
+    Directives: *ngFor
+    <span class="float-right badge badge-success">Directive</span>
+  </div>
+  <div class="card-body">
+    <button class="btn btn-primary mb-3" (click)="onClick()">Add new alert!</button>
+    <p class="code text-monospace">
+      *ngFor="let alert of alerts"
+    </p>
+    <div class="alert alert-primary" role="alert" *ngFor="let alert of alerts">
+      {{ alert }}
+    </div>
+  </div>
+</div>

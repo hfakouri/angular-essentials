@@ -15,6 +15,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { NgifElseDirectiveComponent } from './components/ngif-else-directive/ngif-else-directive.component';
 import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 import { NgclassDirectiveComponent } from './components/ngclass-directive/ngclass-directive.component';
+import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NgclassDirectiveComponent } from './components/ngclass-directive/ngclas
     TwoWayBindingComponent,
     NgifElseDirectiveComponent,
     NgstyleDirectiveComponent,
-    NgclassDirectiveComponent
+    NgclassDirectiveComponent,
+    NgforDirectiveComponent
   ],
   imports: [
     BrowserModule,
