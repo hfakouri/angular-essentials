@@ -13,6 +13,7 @@ import { PropertyBindingComponent } from './components/property-binding/property
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { NgifElseDirectiveComponent } from './components/ngif-else-directive/ngif-else-directive.component';
+import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgifElseDirectiveComponent } from './components/ngif-else-directive/ngi
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
-    NgifElseDirectiveComponent
+    NgifElseDirectiveComponent,
+    NgstyleDirectiveComponent
   ],
   imports: [
     BrowserModule,
