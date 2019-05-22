@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { ClassSelectorComponent } from './components/class-selector/class-select
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
     ClassSelectorComponent,
     InterpolationComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,15 @@
+<div class="card mt-3">
+  <div class="card-header">
+    Databinding: Two-way Binding
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <input type="text" class="form-control" [(ngModel)]="someText">
+      <br />
+      {{ someText }}
+    </p>
+    <p class="card-text text-monospace code">
+      [(ngModel)]="someText"
+    </p>
+  </div>
+</div>
