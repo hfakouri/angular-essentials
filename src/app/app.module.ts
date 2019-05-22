@@ -9,6 +9,7 @@ import { AttributeSelectorComponent } from './components/attribute-selector/attr
 import { ClassSelectorComponent } from './components/class-selector/class-selector.component';
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PropertyBindingComponent } from './components/property-binding/property
     AttributeSelectorComponent,
     ClassSelectorComponent,
     InterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
