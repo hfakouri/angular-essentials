@@ -14,6 +14,7 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { NgifElseDirectiveComponent } from './components/ngif-else-directive/ngif-else-directive.component';
 import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
+import { NgclassDirectiveComponent } from './components/ngclass-directive/ngclass-directive.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyl
     EventBindingComponent,
     TwoWayBindingComponent,
     NgifElseDirectiveComponent,
-    NgstyleDirectiveComponent
+    NgstyleDirectiveComponent,
+    NgclassDirectiveComponent
   ],
   imports: [
     BrowserModule,
