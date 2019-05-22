@@ -12,6 +12,7 @@ import { InterpolationComponent } from './components/interpolation/interpolation
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { NgifElseDirectiveComponent } from './components/ngif-else-directive/ngif-else-directive.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     InterpolationComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    NgifElseDirectiveComponent
   ],
   imports: [
     BrowserModule,

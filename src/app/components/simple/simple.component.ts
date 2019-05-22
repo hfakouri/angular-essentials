@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
     template: `
         <div class="card mt-3">
             <div class="card-header">
-                Simple
+                Components: Simple
+                <span class="float-right badge badge-warning">Component</span>
             </div>
             <div class="card-body">
                 <p class="card-text">A simple component that has been created manually.

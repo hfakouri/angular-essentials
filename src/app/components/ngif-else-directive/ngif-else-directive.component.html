@@ -1,0 +1,20 @@
+<div class="card mt-3">
+  <div class="card-header">
+    Directives: *ngIf else
+    <span class="float-right badge badge-success">Directive</span>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <button class="btn btn-primary" (click)="onClick()">Click here!</button>
+      clickCount = {{ clickCount }}
+    </p>
+    <p class="card-text" *ngIf="isEven(); else countIsOdd">
+      clickCount is even.
+    </p>
+    <ng-template #countIsOdd>
+      <p class="card-text">
+        clickCount is odd.
+      </p>
+    </ng-template>
+  </div>
+</div>
