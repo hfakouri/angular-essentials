@@ -5,7 +5,7 @@ If you are new to angular, most probably you know it is easy to forget what you 
 
 Angular Essentials is a simple tutorial/project that you can run and review angular features.
 
-![](screenshot.png)
+![](screenshot.png)  
 
 ## Usage 
 
