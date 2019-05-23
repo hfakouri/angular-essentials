@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Essentials';
+  vehicles = ['Honda Civic', 'Honda CRV', 'Subaru Forester'];
 }

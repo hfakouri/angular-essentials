@@ -16,6 +16,7 @@ import { NgifElseDirectiveComponent } from './components/ngif-else-directive/ngi
 import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyle-directive.component';
 import { NgclassDirectiveComponent } from './components/ngclass-directive/ngclass-directive.component';
 import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
+import { InputDatabindingComponent } from './components/input-databinding/input-databinding.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-dire
     NgifElseDirectiveComponent,
     NgstyleDirectiveComponent,
     NgclassDirectiveComponent,
-    NgforDirectiveComponent
+    NgforDirectiveComponent,
+    InputDatabindingComponent
   ],
   imports: [
     BrowserModule,

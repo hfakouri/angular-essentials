@@ -1,7 +1,7 @@
 <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">{{title}}</a>
   <div class="text-white-50">
-    An fast way to review angular essentials
+    An fast way to review essential features of angular
   </div>
 </nav>
 
@@ -27,8 +27,24 @@
       <app-ngclass-directive></app-ngclass-directive>
       <app-ngfor-directive></app-ngfor-directive>
 
+      <!-- Advanced Databinding -->
+      <div class="card mt-3">
+        <div class="card-header">
+          Advanced Databinding: @Input
+          <span class="float-right badge badge-primary">Advanced Databinding</span>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <app-input-databinding *ngFor="let vehicle of vehicles" [thecar]="vehicle">
+            </app-input-databinding>
+          </p>
+        </div>
+      </div>
+
+
+
     </div>
   </div>
 </div>
-
-<router-outlet></router-outlet>
+<router-outlet>
+</router-outlet>
