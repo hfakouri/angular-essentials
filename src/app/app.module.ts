@@ -17,6 +17,7 @@ import { NgstyleDirectiveComponent } from './components/ngstyle-directive/ngstyl
 import { NgclassDirectiveComponent } from './components/ngclass-directive/ngclass-directive.component';
 import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
 import { InputDatabindingComponent } from './components/input-databinding/input-databinding.component';
+import { OutputDatabindingComponent } from './components/output-databinding/output-databinding.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InputDatabindingComponent } from './components/input-databinding/input-
     NgstyleDirectiveComponent,
     NgclassDirectiveComponent,
     NgforDirectiveComponent,
-    InputDatabindingComponent
+    InputDatabindingComponent,
+    OutputDatabindingComponent
   ],
   imports: [
     BrowserModule,

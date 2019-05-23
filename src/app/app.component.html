@@ -28,6 +28,7 @@
       <app-ngfor-directive></app-ngfor-directive>
 
       <!-- Advanced Databinding -->
+      <!-- Input -->
       <div class="card mt-3">
         <div class="card-header">
           Advanced Databinding: @Input
@@ -41,7 +42,15 @@
         </div>
       </div>
 
+      <!-- Output -->
+      <app-output-databinding (fruitAdded)="onFruitAdded($event)">
+      </app-output-databinding>
 
+      <div class="card">
+        <div class="card-body">
+          <span class="badge badge-info mr-1" *ngFor="let fruit of fruits">{{ fruit }}</span>
+        </div>
+      </div>
 
     </div>
   </div>
