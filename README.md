@@ -1,5 +1,5 @@
 # Angular Essentials
-> A fast way to review angular essentials.
+> A fast way to review essential features of angular.
 
 If you are new to angular, most probably you know it is easy to forget what you have learnt and you wish you had a simple project to review angular features fast. 
 
