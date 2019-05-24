@@ -9,7 +9,7 @@ export class TwoWayBindingComponent implements OnInit {
   public someText: string;
 
   constructor() {
-    this.someText = "Edit this text";
+    this.someText = 'Edit this text';
   }
 
   ngOnInit() {
