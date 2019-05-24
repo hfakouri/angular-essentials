@@ -18,6 +18,7 @@ import { NgclassDirectiveComponent } from './components/ngclass-directive/ngclas
 import { NgforDirectiveComponent } from './components/ngfor-directive/ngfor-directive.component';
 import { InputDatabindingComponent } from './components/input-databinding/input-databinding.component';
 import { OutputDatabindingComponent } from './components/output-databinding/output-databinding.component';
+import { ViewEncapsulationComponent } from './components/view-encapsulation/view-encapsulation.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { OutputDatabindingComponent } from './components/output-databinding/outp
     NgclassDirectiveComponent,
     NgforDirectiveComponent,
     InputDatabindingComponent,
-    OutputDatabindingComponent
+    OutputDatabindingComponent,
+    ViewEncapsulationComponent
   ],
   imports: [
     BrowserModule,
