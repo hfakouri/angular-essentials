@@ -21,6 +21,7 @@ import { OutputDatabindingComponent } from './components/output-databinding/outp
 import { ViewEncapsulationComponent } from './components/view-encapsulation/view-encapsulation.component';
 import { LocalReferenceComponent } from './components/local-reference/local-reference.component';
 import { ViewChildComponent } from './components/view-child/view-child.component';
+import { NgcontentComponent } from './components/ngcontent/ngcontent.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ViewChildComponent } from './components/view-child/view-child.component
     OutputDatabindingComponent,
     ViewEncapsulationComponent,
     LocalReferenceComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    NgcontentComponent
   ],
   imports: [
     BrowserModule,
