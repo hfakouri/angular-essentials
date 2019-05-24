@@ -20,6 +20,7 @@ import { InputDatabindingComponent } from './components/input-databinding/input-
 import { OutputDatabindingComponent } from './components/output-databinding/output-databinding.component';
 import { ViewEncapsulationComponent } from './components/view-encapsulation/view-encapsulation.component';
 import { LocalReferenceComponent } from './components/local-reference/local-reference.component';
+import { ViewChildComponent } from './components/view-child/view-child.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { LocalReferenceComponent } from './components/local-reference/local-refe
     InputDatabindingComponent,
     OutputDatabindingComponent,
     ViewEncapsulationComponent,
-    LocalReferenceComponent
+    LocalReferenceComponent,
+    ViewChildComponent
   ],
   imports: [
     BrowserModule,

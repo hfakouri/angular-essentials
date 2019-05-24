@@ -1,0 +1,18 @@
+<div class="card mt-3">
+  <div class="card-header">
+    @ViewChild
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-4">
+        <input type="text" class="form-control" #myInput>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary" (click)="onClick()">Click</button>
+      </div>
+    </div>
+    Local reference can be used like this: {{ myInput.value }}
+    <br />or like this: {{ anotherVariable }}
+    <br />or like this: {{ myData.nativeElement.value }}
+  </div>
+</div>
