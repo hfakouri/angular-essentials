@@ -6,7 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./output-databinding.component.css']
 })
 export class OutputDatabindingComponent implements OnInit {
-  @Output() fruitAdded = new EventEmitter<string>();
+  @Output('theFruitAdded') fruitAdded = new EventEmitter<string>();
   public fruitName: string;
 
   constructor() { }
