@@ -8,7 +8,9 @@ import {
   AfterContentChecked,
   AfterViewInit,
   AfterViewChecked,
-  OnDestroy
+  OnDestroy,
+  SimpleChange,
+  Input
 } from '@angular/core';
 
 @Component({
@@ -26,10 +28,13 @@ export class LifecycleHooksComponent implements
   AfterViewChecked,
   OnDestroy {
 
+  @Input() myCollection: [];
+
   ngOnChanges(changes: SimpleChanges): void {
     // Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
     // Add '${implements OnChanges}' to the class.
     console.log('ngOnChanges');
+    console.log(changes);
   }
 
   ngOnInit() {
@@ -74,6 +79,7 @@ export class LifecycleHooksComponent implements
   }
 
   constructor() {
+    console.log('---------- Lifecycle Hooks ------------');
     console.log('constructor');
   }
 }
