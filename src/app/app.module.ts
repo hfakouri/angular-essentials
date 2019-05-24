@@ -22,6 +22,7 @@ import { ViewEncapsulationComponent } from './components/view-encapsulation/view
 import { LocalReferenceComponent } from './components/local-reference/local-reference.component';
 import { ViewChildComponent } from './components/view-child/view-child.component';
 import { NgcontentComponent } from './components/ngcontent/ngcontent.component';
+import { LifecycleHooksComponent } from './components/lifecycle-hooks/lifecycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { NgcontentComponent } from './components/ngcontent/ngcontent.component';
     ViewEncapsulationComponent,
     LocalReferenceComponent,
     ViewChildComponent,
-    NgcontentComponent
+    NgcontentComponent,
+    LifecycleHooksComponent
   ],
   imports: [
     BrowserModule,
