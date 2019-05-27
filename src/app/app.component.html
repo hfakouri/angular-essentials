@@ -66,7 +66,9 @@
 
       <app-lifecycle-hooks [myCollection]="vehicles"></app-lifecycle-hooks>
 
-
+      <app-content-child>
+        <p #myref>The text here will be accessible from app-content-child component.</p>
+      </app-content-child>
     </div>
   </div>
 </div>
