@@ -24,6 +24,8 @@ import { ViewChildComponent } from './components/view-child/view-child.component
 import { NgcontentComponent } from './components/ngcontent/ngcontent.component';
 import { LifecycleHooksComponent } from './components/lifecycle-hooks/lifecycle-hooks.component';
 import { ContentChildComponent } from './components/content-child/content-child.component';
+import { DirectiveUsingRendererComponent } from './components/directive-using-renderer/directive-using-renderer.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { ContentChildComponent } from './components/content-child/content-child.
     ViewChildComponent,
     NgcontentComponent,
     LifecycleHooksComponent,
-    ContentChildComponent
+    ContentChildComponent,
+    DirectiveUsingRendererComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
