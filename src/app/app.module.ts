@@ -28,6 +28,8 @@ import { DirectiveUsingRendererComponent } from './components/directive-using-re
 import { HighlightDirective } from './directives/highlight/highlight.directive';
 import { HoverDirective } from './directives/hover/hover.directive';
 import { DirectiveHostlistenerComponent } from './components/directive-hostlistener/directive-hostlistener.component';
+import { Hover2Directive } from './directives/hover2/hover2.directive';
+import { DirectiveHostbindingComponent } from './components/directive-hostbinding/directive-hostbinding.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { DirectiveHostlistenerComponent } from './components/directive-hostliste
     DirectiveUsingRendererComponent,
     HighlightDirective,
     HoverDirective,
-    DirectiveHostlistenerComponent
+    DirectiveHostlistenerComponent,
+    Hover2Directive,
+    DirectiveHostbindingComponent
   ],
   imports: [
     BrowserModule,
