@@ -32,6 +32,8 @@ import { Hover2Directive } from './directives/hover2/hover2.directive';
 import { DirectiveHostbindingComponent } from './components/directive-hostbinding/directive-hostbinding.component';
 import { Hover3Directive } from './directives/hover3/hover3.directive';
 import { DirectivePropertyBindingComponent } from './components/directive-property-binding/directive-property-binding.component';
+import { UnlessDirective } from './directives/unless/unless.directive';
+import { DirectiveUnlessComponent } from './components/directive-unless/directive-unless.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { DirectivePropertyBindingComponent } from './components/directive-proper
     Hover2Directive,
     DirectiveHostbindingComponent,
     Hover3Directive,
-    DirectivePropertyBindingComponent
+    DirectivePropertyBindingComponent,
+    UnlessDirective,
+    DirectiveUnlessComponent
   ],
   imports: [
     BrowserModule,
