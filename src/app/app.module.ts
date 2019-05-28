@@ -25,7 +25,9 @@ import { NgcontentComponent } from './components/ngcontent/ngcontent.component';
 import { LifecycleHooksComponent } from './components/lifecycle-hooks/lifecycle-hooks.component';
 import { ContentChildComponent } from './components/content-child/content-child.component';
 import { DirectiveUsingRendererComponent } from './components/directive-using-renderer/directive-using-renderer.component';
-import { HighlightDirective } from './directives/highlight.directive';
+import { HighlightDirective } from './directives/highlight/highlight.directive';
+import { HoverDirective } from './directives/hover/hover.directive';
+import { DirectiveHostlistenerComponent } from './components/directive-hostlistener/directive-hostlistener.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { HighlightDirective } from './directives/highlight.directive';
     LifecycleHooksComponent,
     ContentChildComponent,
     DirectiveUsingRendererComponent,
-    HighlightDirective
+    HighlightDirective,
+    HoverDirective,
+    DirectiveHostlistenerComponent
   ],
   imports: [
     BrowserModule,
