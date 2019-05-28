@@ -30,6 +30,8 @@ import { HoverDirective } from './directives/hover/hover.directive';
 import { DirectiveHostlistenerComponent } from './components/directive-hostlistener/directive-hostlistener.component';
 import { Hover2Directive } from './directives/hover2/hover2.directive';
 import { DirectiveHostbindingComponent } from './components/directive-hostbinding/directive-hostbinding.component';
+import { Hover3Directive } from './directives/hover3/hover3.directive';
+import { DirectivePropertyBindingComponent } from './components/directive-property-binding/directive-property-binding.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { DirectiveHostbindingComponent } from './components/directive-hostbindin
     HoverDirective,
     DirectiveHostlistenerComponent,
     Hover2Directive,
-    DirectiveHostbindingComponent
+    DirectiveHostbindingComponent,
+    Hover3Directive,
+    DirectivePropertyBindingComponent
   ],
   imports: [
     BrowserModule,
