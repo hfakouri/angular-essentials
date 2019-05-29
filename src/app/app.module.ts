@@ -35,6 +35,7 @@ import { DirectivePropertyBindingComponent } from './components/directive-proper
 import { UnlessDirective } from './directives/unless/unless.directive';
 import { DirectiveUnlessComponent } from './components/directive-unless/directive-unless.component';
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
+import { LogingComponentComponent } from './components/loging-component/loging-component.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngsw
     DirectivePropertyBindingComponent,
     UnlessDirective,
     DirectiveUnlessComponent,
-    NgswitchDirectiveComponent
+    NgswitchDirectiveComponent,
+    LogingComponentComponent
   ],
   imports: [
     BrowserModule,
