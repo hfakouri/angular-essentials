@@ -34,6 +34,7 @@ import { Hover3Directive } from './directives/hover3/hover3.directive';
 import { DirectivePropertyBindingComponent } from './components/directive-property-binding/directive-property-binding.component';
 import { UnlessDirective } from './directives/unless/unless.directive';
 import { DirectiveUnlessComponent } from './components/directive-unless/directive-unless.component';
+import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { DirectiveUnlessComponent } from './components/directive-unless/directiv
     Hover3Directive,
     DirectivePropertyBindingComponent,
     UnlessDirective,
-    DirectiveUnlessComponent
+    DirectiveUnlessComponent,
+    NgswitchDirectiveComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="card mt-3">
+  <div class="card-header">
+    Directives: ngSwitch
+    <span class="float-right badge badge-success">Directive</span>
+  </div>
+  <div class="card-body">
+    <ul [ngSwitch]="value">
+      <li *ngSwitchCase="1">Value is 1</li>
+      <li *ngSwitchCase="2">Value is 2</li>
+      <li *ngSwitchCase="3">Value is 3</li>
+      <li *ngSwitchCase="4">Value is 4</li>
+      <li *ngSwitchCase="5">Value is 5</li>
+      <li *ngSwitchDefault>Default value</li>
+    </ul>
+  </div>
+</div>
