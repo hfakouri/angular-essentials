@@ -1,87 +1,153 @@
-<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">{{title}}</a>
-  <div class="text-white-50">
-    An fast way to review essential features of angular
-  </div>
-</nav>
-
 <div class="container">
-  <div class="row">
-    <div class="col-12">
+  <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">{{title}}</a>
 
-      <!-- Components -->
-      <app-simple></app-simple>
-      <app-angular-cli></app-angular-cli>
-      <div app-attribute-selector></div>
-      <div class="app-class-selector"></div>
-
-      <!-- Databinding -->
-      <app-interpolation></app-interpolation>
-      <app-property-binding></app-property-binding>
-      <app-event-binding></app-event-binding>
-      <app-two-way-binding></app-two-way-binding>
-
-      <!-- Directives -->
-      <app-ngif-else-directive></app-ngif-else-directive>
-      <app-ngstyle-directive></app-ngstyle-directive>
-      <app-ngclass-directive></app-ngclass-directive>
-      <app-ngfor-directive></app-ngfor-directive>
-
-      <!-- Advanced Databinding -->
-      <!-- Input -->
-      <div class="card mt-3">
-        <div class="card-header">
-          Advanced Databinding: @Input
-          <span class="float-right badge badge-primary">Advanced Databinding</span>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Components
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Simple Component</a>
+          <a class="dropdown-item" href="#">Made by Angular CLI</a>
+          <a class="dropdown-item" href="#">Attribute Selector</a>
+          <a class="dropdown-item" href="#">Class Selector</a>
         </div>
-        <div class="card-body">
-          <p class="card-text">
-            <app-input-databinding *ngFor="let vehicle of vehicles" [thecar]="vehicle">
-            </app-input-databinding>
-          </p>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Databinding
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Interpolation</a>
+          <a class="dropdown-item" href="#">Property Binding</a>
+          <a class="dropdown-item" href="#">Event Binding</a>
+          <a class="dropdown-item" href="#">Two-way Binding</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">@Input</a>
+          <a class="dropdown-item" href="#">@Output</a>
         </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Directives
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">*ngIf else</a>
+          <a class="dropdown-item" href="#">ngStyle</a>
+          <a class="dropdown-item" href="#">ngClass</a>
+          <a class="dropdown-item" href="#">*ngFor</a>
+          <a class="dropdown-item" href="#">Renderer</a>
+          <a class="dropdown-item" href="#">@HostListener</a>
+          <a class="dropdown-item" href="#">@HostListener and @HostBinding</a>
+          <a class="dropdown-item" href="#">@HostListener, @HostBinding and Property Binding</a>
+          <a class="dropdown-item" href="#">Creating a structural directive (*unless)</a>
+          <a class="dropdown-item" href="#">ngSwitch</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">A Simple Logging Service</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Routing
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Routing</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <!-- Components -->
+        <app-simple></app-simple>
+        <app-angular-cli></app-angular-cli>
+        <div app-attribute-selector></div>
+        <div class="app-class-selector"></div>
+
+        <!-- Databinding -->
+        <app-interpolation></app-interpolation>
+        <app-property-binding></app-property-binding>
+        <app-event-binding></app-event-binding>
+        <app-two-way-binding></app-two-way-binding>
+
+        <!-- Directives -->
+        <app-ngif-else-directive></app-ngif-else-directive>
+        <app-ngstyle-directive></app-ngstyle-directive>
+        <app-ngclass-directive></app-ngclass-directive>
+        <app-ngfor-directive></app-ngfor-directive>
+
+        <!-- Advanced Databinding -->
+        <!-- Input -->
+        <div class="card mt-3">
+          <div class="card-header">
+            Advanced Databinding: @Input
+            <span class="float-right badge badge-primary">Advanced Databinding</span>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <app-input-databinding *ngFor="let vehicle of vehicles" [thecar]="vehicle">
+              </app-input-databinding>
+            </p>
+          </div>
+        </div>
+
+        <!-- Output -->
+        <app-output-databinding (theFruitAdded)="onFruitAdded($event)">
+        </app-output-databinding>
+
+        <div class="card">
+          <div class="card-body">
+            <span class="badge badge-info mr-1" *ngFor="let fruit of fruits">{{ fruit }}</span>
+          </div>
+        </div>
+
+        <!-- View Encapsulation -->
+        <app-view-encapsulation></app-view-encapsulation>
+
+        <!--Local Reference -->
+        <app-local-reference></app-local-reference>
+
+        <app-view-child></app-view-child>
+
+        <app-ngcontent>
+          But this is injected from app.component into the component.
+        </app-ngcontent>
+
+        <app-lifecycle-hooks [myCollection]="vehicles"></app-lifecycle-hooks>
+
+        <app-content-child>
+          <p #myref>The text here will be accessible from app-content-child component.</p>
+        </app-content-child>
+
+        <app-directive-using-renderer></app-directive-using-renderer>
+        <app-directive-hostlistener></app-directive-hostlistener>
+        <app-directive-hostbinding></app-directive-hostbinding>
+        <app-directive-property-binding></app-directive-property-binding>
+        <app-directive-unless></app-directive-unless>
+        <app-ngswitch-directive></app-ngswitch-directive>
+
+        <!-- Services -->
+        <app-loging-component></app-loging-component>
+
       </div>
-
-      <!-- Output -->
-      <app-output-databinding (theFruitAdded)="onFruitAdded($event)">
-      </app-output-databinding>
-
-      <div class="card">
-        <div class="card-body">
-          <span class="badge badge-info mr-1" *ngFor="let fruit of fruits">{{ fruit }}</span>
-        </div>
-      </div>
-
-      <!-- View Encapsulation -->
-      <app-view-encapsulation></app-view-encapsulation>
-
-      <!--Local Reference -->
-      <app-local-reference></app-local-reference>
-
-      <app-view-child></app-view-child>
-
-      <app-ngcontent>
-        But this is injected from app.component into the component.
-      </app-ngcontent>
-
-      <app-lifecycle-hooks [myCollection]="vehicles"></app-lifecycle-hooks>
-
-      <app-content-child>
-        <p #myref>The text here will be accessible from app-content-child component.</p>
-      </app-content-child>
-
-      <app-directive-using-renderer></app-directive-using-renderer>
-      <app-directive-hostlistener></app-directive-hostlistener>
-      <app-directive-hostbinding></app-directive-hostbinding>
-      <app-directive-property-binding></app-directive-property-binding>
-      <app-directive-unless></app-directive-unless>
-      <app-ngswitch-directive></app-ngswitch-directive>
-
-      <!-- Services -->
-      <app-loging-component></app-loging-component>
-
     </div>
   </div>
+  <router-outlet>
+  </router-outlet>
+
 </div>
-<router-outlet>
-</router-outlet>
