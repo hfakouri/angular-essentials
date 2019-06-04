@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+      <!-- Components -->
+      <app-simple></app-simple>
+      <app-angular-cli></app-angular-cli>
+      <div app-attribute-selector></div>
+      <div class="app-class-selector"></div>
+
+      <!-- Databinding -->
+      <app-interpolation></app-interpolation>
+      <app-property-binding></app-property-binding>
+      <app-event-binding></app-event-binding>
+      <app-two-way-binding></app-two-way-binding>
+
+      <!-- Advanced Databinding -->
+      <!-- Input -->
+      <div class="card mt-3">
+        <div class="card-header">
+          Advanced Databinding: @Input
+          <span class="float-right badge badge-primary">Advanced Databinding</span>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <app-input-databinding *ngFor="let vehicle of vehicles" [thecar]="vehicle">
+            </app-input-databinding>
+          </p>
+        </div>
+      </div>
+
+      <!-- Output -->
+      <app-output-databinding (theFruitAdded)="onFruitAdded($event)">
+      </app-output-databinding>
+
+      <div class="card">
+        <div class="card-body">
+          <span class="badge badge-info mr-1" *ngFor="let fruit of fruits">{{ fruit }}</span>
+        </div>
+      </div>
+
+      <!-- Directives -->
+      <app-ngif-else-directive></app-ngif-else-directive>
+      <app-ngstyle-directive></app-ngstyle-directive>
+      <app-ngclass-directive></app-ngclass-directive>
+      <app-ngfor-directive></app-ngfor-directive>
+
+      <!-- View Encapsulation -->
+      <app-view-encapsulation></app-view-encapsulation>
+
+      <!--Local Reference -->
+      <app-local-reference></app-local-reference>
+
+      <app-view-child></app-view-child>
+
+      <app-ngcontent>
+        But this is injected from app.component into the component.
+      </app-ngcontent>
+
+      <app-lifecycle-hooks [myCollection]="vehicles"></app-lifecycle-hooks>
+
+      <app-content-child>
+        <p #myref>The text here will be accessible from app-content-child component.</p>
+      </app-content-child>
+
+      <app-directive-using-renderer></app-directive-using-renderer>
+      <app-directive-hostlistener></app-directive-hostlistener>
+      <app-directive-hostbinding></app-directive-hostbinding>
+      <app-directive-property-binding></app-directive-property-binding>
+      <app-directive-unless></app-directive-unless>
+      <app-ngswitch-directive></app-ngswitch-directive>
+
+      <!-- Services -->
+      <app-loging-component></app-loging-component>
+
+      <!-- Routing -->
+      <app-fundamentals-routing></app-fundamentals-routing>
+    </div>
+  </div>
+</div>

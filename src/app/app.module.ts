@@ -36,6 +36,47 @@ import { UnlessDirective } from './directives/unless/unless.directive';
 import { DirectiveUnlessComponent } from './components/directive-unless/directive-unless.component';
 import { NgswitchDirectiveComponent } from './components/ngswitch-directive/ngswitch-directive.component';
 import { LogingComponentComponent } from './components/loging-component/loging-component.component';
+import { Routes, RouterModule } from '@angular/router';
+import { AllComponent } from './components/all/all.component';
+import { FundamentalsRoutingComponent } from './components/fundamentals-routing/fundamentals-routing.component';
+
+const appRoutes: Routes = [
+  { path: '', component: AllComponent },
+
+  { path: 'components/simple', component: SimpleComponent },
+  { path: 'components/angular-cli', component: AngularCliComponent },
+  { path: 'components/attribute-selector', component: AttributeSelectorComponent },
+  { path: 'components/class-selector', component: ClassSelectorComponent },
+  { path: 'components/lifecycle-hooks', component: LifecycleHooksComponent },
+
+  { path: 'databinding/interpolation', component: InterpolationComponent },
+  { path: 'databinding/property-binding', component: PropertyBindingComponent },
+  { path: 'databinding/event-binding', component: EventBindingComponent },
+  { path: 'databinding/two-way-binding', component: TwoWayBindingComponent },
+  { path: 'databinding/input', component: InputDatabindingComponent },
+  { path: 'databinding/output', component: OutputDatabindingComponent },
+
+  { path: 'directives/ng-if-else', component: NgifElseDirectiveComponent },
+  { path: 'directive/ng-style', component: NgstyleDirectiveComponent },
+  { path: 'directive/ng-class', component: NgclassDirectiveComponent },
+  { path: 'directive/ng-for', component: NgforDirectiveComponent },
+  { path: 'directive/renderer', component: DirectiveUsingRendererComponent },
+  { path: 'directive/host-listener', component: DirectiveHostlistenerComponent },
+  { path: 'directive/host-binding', component: DirectiveHostbindingComponent },
+  { path: 'directive/property-binding', component: DirectivePropertyBindingComponent },
+  { path: 'directive/unless', component: DirectiveUnlessComponent },
+  { path: 'directive/ng-switch', component: NgswitchDirectiveComponent },
+
+  { path: 'services/logging-service', component: LogingComponentComponent },
+
+  { path: 'routing/fundamentals', component: FundamentalsRoutingComponent },
+
+  { path: 'others/view-encapsulation', component: ViewEncapsulationComponent },
+  { path: 'others/local-reference', component: LocalReferenceComponent },
+  { path: 'others/view-child', component: ViewChildComponent },
+  { path: 'others/ng-content', component: NgcontentComponent },
+  { path: 'others/content-child', component: ContentChildComponent }
+];
 
 @NgModule({
   declarations: [
@@ -71,14 +112,18 @@ import { LogingComponentComponent } from './components/loging-component/loging-c
     UnlessDirective,
     DirectiveUnlessComponent,
     NgswitchDirectiveComponent,
-    LogingComponentComponent
+    LogingComponentComponent,
+    AllComponent,
+    FundamentalsRoutingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
