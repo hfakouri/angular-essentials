@@ -1,4 +1,4 @@
-/* Update the version: 
+/* This is Angular Essentials versioning. To update the version: 
    1. Update the version in package.json
    2. Run: npm i */
 
@@ -18,7 +18,7 @@ const file = resolve(__dirname, '..', 'src', 'environments', 'version.ts');
 writeFileSync(file,
 `// IMPORTANT: THIS FILE IS AUTO GENERATED! DO NOT MANUALLY EDIT OR CHECKIN!
 /* tslint:disable */
-export const VERSION = ${JSON.stringify(gitInfo, null, 4)};
+export const APP_VERSION = ${JSON.stringify(gitInfo, null, 4)};
 /* tslint:enable */
 `, { encoding: 'utf-8' });
 
