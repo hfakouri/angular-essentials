@@ -1,97 +1,98 @@
 <div class="container">
-  <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">{{title}}</a>
-
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/">
-          All
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Components
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="/components/simple">Simple Component</a>
-          <a class="dropdown-item" routerLink="/components/angular-cli">Made by Angular CLI</a>
-          <a class="dropdown-item" routerLink="/components/attribute-selector">Attribute Selector</a>
-          <a class="dropdown-item" routerLink="/components/class-selector">Class Selector</a>
-          <a class="dropdown-item" routerLink="/components/lifecycle-hooks">Lifecycle Hooks</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Databinding
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="/databinding/interpolation">Interpolation</a>
-          <a class="dropdown-item" routerLink="/databinding/property-binding">Property Binding</a>
-          <a class="dropdown-item" routerLink="/databinding/event-binding">Event Binding</a>
-          <a class="dropdown-item" routerLink="/databinding/two-way-binding">Two-way Binding</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/databinding/input">@Input</a>
-          <a class="dropdown-item" routerLink="/databinding/output">@Output</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Directives
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="/directives/ng-if-else">*ngIf else</a>
-          <a class="dropdown-item" routerLink="/directive/ng-style">ngStyle</a>
-          <a class="dropdown-item" routerLink="/directive/ng-class">ngClass</a>
-          <a class="dropdown-item" routerLink="/directive/ng-for">*ngFor</a>
-          <a class="dropdown-item" routerLink="/directive/renderer">Renderer</a>
-          <a class="dropdown-item" routerLink="/directive/host-listener">@HostListener</a>
-          <a class="dropdown-item" routerLink="/directive/host-binding">@HostListener and @HostBinding</a>
-          <a class="dropdown-item" routerLink="/directive/property-binding">@HostListener, @HostBinding and Property
-            Binding</a>
-          <a class="dropdown-item" routerLink="/directive/unless">Creating a structural directive (*unless)</a>
-          <a class="dropdown-item" routerLink="/directive/ng-switch">ngSwitch</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Services
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="/services/logging-service">A Simple Logging Service</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Routing
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="/routing/fundamentals">Routing</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Others
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="/others/view-encapsulation">View Encapsulation</a>
-          <a class="dropdown-item" routerLink="/others/local-reference">Local Reference</a>
-          <a class="dropdown-item" routerLink="/others/view-child">@ViewChild</a>
-          <a class="dropdown-item" routerLink="/others/ng-content">ng-content</a>
-          <a class="dropdown-item" routerLink="/others/content-child">@ContentChild</a>
-        </div>
-      </li>
-    </ul>
-
-    <span class="ver">
-      App Version {{appVersion.version}}<br/>
-      Angular Version {{ angularVersion }}
-    </span>
+  <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark nav-noflex">
+      <span class="title">
+          <a class="navbar-brand" href="#">{{title}}</a>
+          <span class="ver">
+              App Ver. {{appVersion.version}} | 
+              Angular Ver. {{ angularVersion }}
+          </span>
+      </span>
+      <br/>   
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">
+            All
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Components
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/components/simple">Simple Component</a>
+            <a class="dropdown-item" routerLink="/components/angular-cli">Made by Angular CLI</a>
+            <a class="dropdown-item" routerLink="/components/attribute-selector">Attribute Selector</a>
+            <a class="dropdown-item" routerLink="/components/class-selector">Class Selector</a>
+            <a class="dropdown-item" routerLink="/components/lifecycle-hooks">Lifecycle Hooks</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Databinding
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/databinding/interpolation">Interpolation</a>
+            <a class="dropdown-item" routerLink="/databinding/property-binding">Property Binding</a>
+            <a class="dropdown-item" routerLink="/databinding/event-binding">Event Binding</a>
+            <a class="dropdown-item" routerLink="/databinding/two-way-binding">Two-way Binding</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/databinding/input">@Input</a>
+            <a class="dropdown-item" routerLink="/databinding/output">@Output</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Directives
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/directives/ng-if-else">*ngIf else</a>
+            <a class="dropdown-item" routerLink="/directive/ng-style">ngStyle</a>
+            <a class="dropdown-item" routerLink="/directive/ng-class">ngClass</a>
+            <a class="dropdown-item" routerLink="/directive/ng-for">*ngFor</a>
+            <a class="dropdown-item" routerLink="/directive/renderer">Renderer</a>
+            <a class="dropdown-item" routerLink="/directive/host-listener">@HostListener</a>
+            <a class="dropdown-item" routerLink="/directive/host-binding">@HostListener and @HostBinding</a>
+            <a class="dropdown-item" routerLink="/directive/property-binding">@HostListener, @HostBinding and Property
+              Binding</a>
+            <a class="dropdown-item" routerLink="/directive/unless">Creating a structural directive (*unless)</a>
+            <a class="dropdown-item" routerLink="/directive/ng-switch">ngSwitch</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/services/logging-service">A Simple Logging Service</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Routing
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/routing/fundamentals">Routing</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Others
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/others/view-encapsulation">View Encapsulation</a>
+            <a class="dropdown-item" routerLink="/others/local-reference">Local Reference</a>
+            <a class="dropdown-item" routerLink="/others/view-child">@ViewChild</a>
+            <a class="dropdown-item" routerLink="/others/ng-content">ng-content</a>
+            <a class="dropdown-item" routerLink="/others/content-child">@ContentChild</a>
+          </div>
+        </li>
+      </ul>
   </nav>
 
   <div class="container">
