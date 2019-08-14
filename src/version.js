@@ -1,4 +1,5 @@
 /* Update the version: npm i */
+
 const { gitDescribeSync } = require('git-describe');
 const { version } = require('../package.json');
 const { resolve, relative } = require('path');
