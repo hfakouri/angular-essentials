@@ -6,7 +6,7 @@ import { Component, OnInit, ElementRef, ContentChild, AfterContentInit } from '@
   styleUrls: ['./content-child.component.css']
 })
 export class ContentChildComponent implements OnInit, AfterContentInit {
-  @ContentChild('myref') paragraph: ElementRef;
+  @ContentChild('myref', {static: true}) paragraph: ElementRef;
 
   constructor() { }
 

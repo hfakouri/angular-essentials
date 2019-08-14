@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { VERSION } from 'src/environments/version';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Essentials';
+  version = VERSION;
 
   constructor() { }
 }
