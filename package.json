@@ -1,6 +1,6 @@
 {
   "name": "angular-essentials",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "node src/version.js"
+    "postinstall": "node src/version.ts"
   },
   "private": true,
   "dependencies": {

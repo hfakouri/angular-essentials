@@ -1,4 +1,7 @@
-/* Update the version: npm i */
+/* Update the version: 
+    - Update the version in package.json
+    - Then run: npm i 
+*/
 
 const { gitDescribeSync } = require('git-describe');
 const { version } = require('../package.json');
