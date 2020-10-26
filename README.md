@@ -1,3 +1,5 @@
+[Archived and won't be updated]
+
 # Angular Essentials
 > A fast way to review essential features of angular.
 
